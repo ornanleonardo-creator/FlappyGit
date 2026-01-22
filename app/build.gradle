@@ -1,25 +1,21 @@
-plugins {
-    id 'com.android.application'
-}
-
-android {
-    namespace "com.example.flappygit"
-    compileSdk 33
-
-    defaultConfig {
-        applicationId "com.example.flappygit"
-        minSdk 21
-        targetSdk 33
-        versionCode 1
-        versionName "1.0"
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
     }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-        }
+    plugins {
+        id "com.android.application" version "8.1.0"
     }
 }
 
-dependencies {
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
 }
+
+rootProject.name = "FlappyGit"
+include(":app")
