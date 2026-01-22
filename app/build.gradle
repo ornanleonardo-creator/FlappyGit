@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace 'com.example.flappygit'
+    namespace "com.example.flappygit"
     compileSdk 33
 
     defaultConfig {
@@ -15,14 +15,9 @@ android {
     }
 
     buildTypes {
-        debug {
-            debuggable true
+        release {
+            minifyEnabled false
         }
-    }
-
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
     }
 }
 
