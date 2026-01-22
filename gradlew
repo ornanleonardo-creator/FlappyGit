@@ -1,2 +1,5 @@
 #!/bin/sh
-./gradle/wrapper/gradle-wrapper.jar "$@"
+
+chmod +x gradle/wrapper/gradle-wrapper.jar
+
+java -jar gradle/wrapper/gradle-wrapper.jar "$@"
